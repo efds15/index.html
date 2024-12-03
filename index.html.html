@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Flexbox</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header, .footer {
+            width: 100%;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+        .header div, .footer div {
+            display: flex;
+            gap: 15px;
+        }
+        .search-box {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .search-box input {
+            width: 50%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #dfe1e5;
+            border-radius: 24px;
+            outline: none;
+        }
+        .search-box button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 24px;
+            background-color: #f8f9fa;
+            cursor: pointer;
+        }
+        .search-box button:hover {
+            background-color: #e8e8e8;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <a href="#">Sobre</a>
+            <a href="#">Loja</a>
+        </div>
+        <div>
+            <a href="#">Gmail</a>
+            <a href="#">Imagens</a>
+        </div>
+    </div>
+    <div class="search-box">
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google logo">
+        <input type="text" placeholder="Pesquisar no Google">
+        <div>
+            <button>Pesquisa Google</button>
+            <button>Estou com sorte</button>
+        </div>
+    </div>
+    <div class="footer">
+        <div>
+            <a href="#">Privacidade</a>
+            <a href="#">Termos</a>
+        </div>
+        <div>
+            <a href="#">Configurações</a>
+        </div>
+    </div>
+</body>
+</html>
